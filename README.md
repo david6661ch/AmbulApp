@@ -18,7 +18,7 @@ Scrum master: Juan Estebán
 Developer: David 
 QA: Andrés 
 
-Página inicio 
+Página inicio (David)
 header 
 Logo de la empresa 
 Menú de navegación
@@ -34,7 +34,7 @@ términos y condiciones
 políticas de privacidad
 
 
-Formulario de reserva 
+Formulario de reserva (Juan Esteban)
 header 
 Logo de la empresa
 Menú de navegación 
@@ -47,7 +47,7 @@ información de contacto
 términos y condiciones
 políticas de privacidad
 
-Precio de servicio particular 
+Precio de servicio particular  (Andrés)
 header 
 Logo de la empresa
 Menú de navegación 
@@ -61,7 +61,7 @@ información de contacto
 términos y condiciones
 políticas de privacidad
 
-formulario del login 
+formulario del login (Nicolás)
 usuario y contraseña 
 
 formulario sign-up 
