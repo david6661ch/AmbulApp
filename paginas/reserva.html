@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+</head>
+<body>
+    
+    <header>
+        <h1>
+            Ambulapp
+        </h1>
+    </header>
+
+
+
+    <main>
+
+        <p>
+            PROGRAMA TU SERVICIO 
+        </p>
+
+        <h2>
+            Reserva tu traslado
+        </h2>
+
+        <p>
+            Completa la información para programar tu servicio de trasnporte asistencial.
+        </p>
+
+        <p>
+            Información segura
+        </p>
+
+        <p>
+            Tus datos están protegidos.
+        </p>
+
+        <form action="=#" method="post">
+
+            <fieldset>
+                <legend>Información del usuario</legend>
+                <p>
+                    Datos de la persona que realizará el traslado.
+                </p>
+
+                <p>
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" minlength="3" title="Ej: Ana Zuluaga" required>
+                </p>
+
+                <p>
+                    <select id="tdocumento" name="tdocumento">
+                        <option value="">Selecciona una opción</option>
+                        <option value="TI">Tarjeta de identidad</option>
+                        <option value="CC">Cédula de ciudadania</option>
+                        <option value="CE">Cédula de extranjería</option>
+                        <option value="PP">Pasaporte</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="documento">Número de documento</label>
+                    <input type="text" id="documento" name="documento" minlength="3" maxlength="10" required>
+                </p>
+
+                <p>
+                    <label for="correo">Correo electronico</label>
+                    <input type="email" id="correo" name="correo" required>
+
+                </p>
+
+                <p>
+                    <label for="contacto">Número de contacto</label>
+                    <input type="number" id="contacto" name="contacto" required>
+                </p>
+                
+                <p>
+                    <label for="historiaclinica">Historia clínica actualizada</label>
+                    <input type="file" id="historiaclinica" name="historiaclinica" required>
+                </p>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Información del servicio
+                </legend>
+                
+                <p>
+                    Cuéntanos cuándo y dónde necesitas el traslado.
+                </p>
+
+                <p>
+                    <label for="fecha">Fecha del servicio</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </p>
+                
+                <p>
+                    <label for="hora">Hora del servicio</label>
+                    <input type="time" id="hora" name="hora" required>
+                </p>
+
+                <div class="adicionales">
+
+                    <p>
+                        Tipo de servicio
+                    </p>
+
+                    <p>
+                        <label for="convenio">Convenio</label>
+                        <input type="radio" id="convenio" name="servicio" required>
+
+                        <label for="particular">Particular</label>
+                        <input type="radio" id="particular" name="servicio" required>
+                    </p>
+
+
+                    <p>
+                        <label for="puntorecogida">Punto de recogida</label>
+                        <input type="text" id="puntorecogida" name="puntorecogida" required>
+                    </p>
+
+                    <p>
+                        <label for="puntodestino">Punto de destino</label>
+                        <input type="text" id="puntodestino" name="puntodestino" required>
+                    </p>
+
+                    <p>
+                        Servicios adicionales
+                    </p>
+
+                    <p>
+                        <label for="sillaruedas">Silla de ruedas</label>
+                        <input type="checkbox" id="sillaruedas" name="sillaruedas">
+                    </p>
+
+                    <p>
+                        <label for="acompañamiento">Acompañamiento asistencial</label>
+                        <input type="checkbox" id="acompañamiento" name="acompañamiento">
+                    </p>
+
+                    <p>
+                        <label for="oxigeno">Oxígeno</label>
+                        <input type="checkbox" id="oxigeno" name="oxigeno">
+                    </p>
+
+                    <p>
+                        <label for="ambulancia">Ambulancia</label>
+                        <input type="checkbox" id="ambulancia" name="ambulancia">
+                    </p>
+
+                    <p>
+                        <label for="esperaregreso">Espera y regreso</label>
+                        <input type="checkbox" id="esperaregreso" name="esperaregreso">
+                    </p>
+
+                </div>
+                
+
+                <p>
+                    <label for="comentarios">Deja tú comentario</label>
+                    <p>
+                    </p>
+                    <textarea id="comentarios" name="comentarios" rows="4" cols="50" minlenght="10" maxlength="300" placeholder="Cuéntanos si tienes alguna condicion o necesidad especial"></textarea>
+                </p>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Política de privacidad</legend>
+                <p>
+                    <input type="checkbox" id="privacidad" name="privacidad" required>
+                    <label for="privacidad">Acepto la política de privacidad</label>
+                </p>
+            </fieldset>
+
+        </form>
+
+
+    </main>
+
+
+
+
+</body>
+</html>
