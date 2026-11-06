@@ -1,0 +1,78 @@
+:root{
+    /*paleta de colores */
+    --azul-noche: #0B1F33;
+    --azul-acero: #245B83; 
+    --rojo: #D62839;
+    --gris: #E8EDF2;
+    --Blanco:#FFFFFF;
+
+ 
+
+    /*fuentes de texto*/
+
+    --titulos: 'Montserrat', Arial;
+    --textos: "Open Sans", Arial;
+
+    /* Espaciado y tamaño de fuente */
+
+    --espaciado-muypequeno: 0.3rem;
+    --espaciado-pequeno: 0.5rem;
+    --espaciado-mediano: 1rem;
+    --espaciado-grande: 1.5rem;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navbar con la paleta */
+.navbar[data-bs-theme="dark"] {
+    --bs-navbar-color: #FFFFFF;
+    --bs-navbar-hover-color: #FFFFFF;
+    --bs-navbar-active-color: var(--azul-noche);
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    text-decoration: underline;
+}
+
+/* cuerpo */
+
+body {
+    margin: 8px;
+    font-family: var(--textos);
+    background-color: var(--Blanco);
+    color: var(--azul-noche);
+    padding-bottom: 5rem;
+}
+
+
+/* Titulos */
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--titulos);
+    color: var(--azul-noche);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
