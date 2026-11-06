@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Tarifas AmbulApp">
+    <title>Tarifas | AmbulApp</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="../img/logo.jpeg">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Main navigation">
+            <div class="container-fluid">
+                
+                <a class="navbar-brand" href="../index.html">AmbulApp</a>
+               
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="mainMenu">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="precios.html">Precios y servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reserva.html">Reservar</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <a class="btn btn-primary" href="login.html">Iniciar sesión</a>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <main class="container py-4">
+        <h1 class="text-center">Precios y Servicios</h1>
+        <p class="text-center">Tarifas transparentes y justas para todos nuestros clientes.</p>
+        
+        <h2>Tarifas por recorrido</h2>
+        <p>Valores de referencia. El precio final se confirma según distancia, horario y necesidades específicas.</p>
+     
+
+        <div class="table-responsive">
+            <table class= "table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Tipo de recorrido</th>
+                        <th scope="col">Precio por kilómetro</th>
+                        <th scope="col">Información adicional</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    <tr>
+                        <td>Urbano</td>
+                        <td>$5.000</td>
+                        <td>Incluye acompañamiento básico y hasta 15 minutos de espera</td>
+                    </tr>
+                    <tr>
+                        <td>Metropolitano</td>
+                        <td>$10.000</td>
+                        <td>Aplica para los 10 municipios del área metropolitana</td>
+                    </tr>
+                    <tr>
+                        <td>Intermunicipal</td>
+                        <td>$15.000</td>
+                        <td>Cotización personalizada según destino y duración</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container py-4">
+            <h2>Tarifas por tipo de servicio</h2>
+            <p>Ofrecemos servicios especializados para diferentes necesidades médicas. Los precios pueden variar según la complejidad del servicio y los recursos requeridos.</p>
+            
+            <ul class="row g-4 list-unstyled">
+                <li class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Traslado asistencial básico</h4>
+                            <p class="card-text">Para pacientes que requieren apoyo durante su desplazamiento</p>
+                            <ul>
+                                <li>Vehículo adaptado</li>
+                                <li>Conductor capacitado</li>
+                                <li>Asistencia básica durante el traslado</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <strong>Precio: $50.000</strong>
+                            <a class="btn btn-primary float-end" href="reserva.html">Reservar</a>    
+                        </div>
+                    </div> 
+                </li>
+
+                <li class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Traslado con acompañante</h4>
+                            <p class="card-text">Acompañamiento asistencial personalizado durante todo el recorrido</p>
+                            <ul>
+                                <li>Todo el servicio básico</li>
+                                <li>Auxiliar asistencial</li>
+                                <li>Apoyo puerta a puerta</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <strong>Precio: $100.000</strong>
+                            <a class="btn btn-primary float-end" href="reserva.html">Reservar</a>    
+                        </div>
+                    </div>
+                </li>
+
+                <li class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Traslado especializado</h4>
+                            <p class="card-text">Para personas con necesidades específicas de soporte y movilidad.</p>
+                            <ul>
+                                <li>Personal especializado</li>
+                                <li>Equipos según valoración</li>
+                                <li>Seguimiento del servicio</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <strong>Precio: $200.000</strong>
+                            <a class="btn btn-primary float-end" href="reserva.html">Reservar</a>    
+                        </div>
+                    </div>
+                </li>
+
+
+            </ul>
+        
+        
+        </div>
+
+
+        <div class="container py-4">
+            <h2 class="text-center">Servicios adicionales</h2>
+            <p class="text-center">Opciones que puedes agregar según tus necesidades.</p>
+            
+            <ul class="row g-4 list-unstyled">
+                <li class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Espera y regreso</h4>
+                            <p class="card-text">El vehículo permanece disponible durante tu cita.</p>
+                            
+                        </div>
+                        
+                    </div> 
+                </li>
+
+                <li class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Silla de ruedas</h4>
+                            <p class="card-text">Disponibilidad de silla para facilitar tu movilidad.</p>
+                            
+                        </div>
+                        
+                    </div>
+                </li>
+
+                <li class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Acompañante asistencial</h4>
+                            <p class="card-text">Apoyo profesional durante todo el proceso.</p>
+                           
+                        </div>
+                        
+                    </div>
+                </li>
+
+                <li class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Soporte de oxígeno</h4>
+                            <p class="card-text">Suministro bajo indicación y valoración previa.</p>
+                            
+                        </div>
+                        
+                    </div>
+                </li>
+
+            </ul>
+        
+        
+        </div>
+
+        <div class="container py-4 text-center">
+            <h6>Listos para acompañarte</h6>
+            <h4>Programa tu próximo traslado</h4>
+            <p>Completa tu solicitud y nuestro equipo confirmará cada detalle contigo</p>
+            <a class="btn btn-primary" href="reserva.html">Reservar</a>
+        </div>
+
+
+
+
+
+
+    </main>
+
+    <footer class="container py-4">
+        <div class="d-flex flex-column flex-md-row justify-content-between text-center gap-4">
+            <div>
+                <h4>AmbulApp</h4>
+                <p>Movilidad asistencial humana, segura y oportuna en el Valle de Aburrá</p>
+                <p>&copy; 2023 AmbulApp. Todos los derechos reservados.</p>
+            </div>
+
+            <div>
+                <h5>Explora</h5>
+                <ul class="list-unstyled">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="precios.html">Precios y servicios</a></li>
+                    <li><a href="reserva.html">Reservar traslado</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h5>Información</h5>
+                <ul class="list-unstyled">
+                    <li><p>Términos y condiciones</p></li>
+                    <li><p>Política de privacidad</p></li>
+                    <li><p>PQRS</p></li>
+                </ul>
+            </div>
+
+            <div>
+                <h5>Contáctanos</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <address>
+                            Correo electrónico: <a href="mailto:ayuda@ambulapp.co">ayuda@ambulapp.co</a><br>
+                    
+                        </address>
+                    </li>
+                    <li>Teléfono: <a href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer">+57 314 825 3812</a></li>
+                    <li>
+                        <address>
+                            <a href="https://maps.app.goo.gl/joxj2ArDomV6rnWJ6" target="_blank">Calle 16 #55 - 129, Medellín, Colombia</a><br>
+                    
+                        </address>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
