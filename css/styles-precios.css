@@ -1,25 +1,21 @@
-:root{
-    /*paleta de colores */
-    --azul-noche: #0B1F33;
-    --azul-acero: #245B83; 
-    --rojo: #D62839;
-    --gris: #E8EDF2;
-    --Blanco:#FFFFFF;
+:root {
+    /* Paleta */
+    --night: #0b1f33;
+    --night-2: #12304d;   /* sin usar todavía */
+    --steel: #245b83;
+    --steel-dark: #19496c;
+    --red: #d62839;
+    --mist: #e8edf2;
+    --white: #ffffff;
+    --ink-soft: #566575;
+    --line: #dce4eb;
+    --pale: #f5f8fa;
+    --green: #21835a;     /* sin usar todavía */
+    --sky: #b9d4ea;
 
- 
-
-    /*fuentes de texto*/
-
-    --titulos: 'Montserrat', Arial;
-    --textos: "Open Sans", Arial;
-
-    /* Espaciado y tamaño de fuente */
-
-    --espaciado-muypequeno: 0.3rem;
-    --espaciado-pequeno: 0.5rem;
-    --espaciado-mediano: 1rem;
-    --espaciado-grande: 1.5rem;
-
+    /* Fuente: Bootstrap lee estas variables */
+    --bs-body-font-family: "Manrope", sans-serif;
+    --bs-body-color: var(--night);
 }
 
 *,
@@ -33,46 +29,126 @@ img {
     height: auto;
 }
 
-/* Navbar con la paleta */
-.navbar[data-bs-theme="dark"] {
-    --bs-navbar-color: #FFFFFF;
-    --bs-navbar-hover-color: #FFFFFF;
-    --bs-navbar-active-color: var(--azul-noche);
+/* ---------- Botones ---------- */
+.btn { border-radius: .6rem; font-weight: 700; padding: .7rem 1.25rem; }
+.btn-primary {
+    --bs-btn-bg: var(--steel);
+    --bs-btn-border-color: var(--steel);
+    --bs-btn-hover-bg: var(--red);
+    --bs-btn-hover-border-color: var(--red);
+    --bs-btn-active-bg: var(--red);
+    --bs-btn-active-border-color: var(--red);
+  
 }
 
+/* ---------- Navbar ---------- */
+.navbar {
+    padding-block: 0;
+    background: var(--white);
+    border-bottom: 1px solid var(--line);
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    padding: .75rem 0;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--night);
+}
+.navbar .nav-link {
+    padding: .6rem .9rem;
+    font-weight: 500;
+    color: var(--ink-soft);
+}
 .navbar .nav-link:hover,
-.navbar .nav-link:focus {
-    text-decoration: underline;
+.navbar .nav-link:focus { color: var(--red); }
+.navbar .nav-link.active { color: var(--steel); }
+
+@media (min-width: 992px) {
+    .navbar .nav-link {
+        padding: 1.75rem .9rem;
+        border-bottom: 3px solid transparent;
+    }
+    .navbar .nav-link.active { border-bottom-color: var(--steel); }
 }
 
-/* cuerpo */
-
-body {
-    margin: 8px;
-    font-family: var(--textos);
-    background-color: var(--Blanco);
-    color: var(--azul-noche);
-    padding-bottom: 5rem;
+/* ---------- Tabla ---------- */
+.tabla-precios { --bs-table-bg: transparent; margin: 0; }
+.tabla-precios th {
+    padding: 1rem 1.25rem;
+    background: var(--mist);
+    border-bottom: 1px solid var(--line);
+    font-size: .72rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+}
+.tabla-precios td {
+    padding: 1.25rem;
+    border-color: var(--line);
+    font-size: .9rem;
+    color: var(--ink-soft);
 }
 
 
-/* Titulos */
+/* ---------- Tarjetas ---------- */
+.plan {
+   
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 1.25rem;
+}
+.plan .card-body { padding: 1.75rem 1.75rem 0; }
+.plan .card-footer { padding: 1.5rem 1.75rem 1.75rem; background: transparent; border: 0; }
 
+/*Servicios adicionales*/
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: var(--titulos);
-    color: var(--azul-noche);
-    font-weight: 700;
-    font-size: 1.5rem;
+.extra { background: var(--pale); border: 1px solid var(--line); border-radius: 1rem; }
+.extra .card-title { font-size: 1.05rem; font-weight: 700; }
+.extra .card-text { font-size: .85rem; color: var(--ink-soft); }
+
+/* ---------- Banda CTA ---------- */
+.cta {
+    padding: 3rem;
+    background: var(--steel);
+    border-radius: 1.5rem;
+    color: var(--white);
+}
+.cta h6 {
+    margin-bottom: 1rem;
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--sky);
 }
 
 
+.cta h4 {
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    font-weight: 400;
+    letter-spacing: -.03em;
+    color: var(--white);
+}
 
+.cta p { margin: 0; color: var(--white); }
+.cta .btn {
+    --bs-btn-bg: var(--white);
+    --bs-btn-border-color: var(--white);
+    --bs-btn-hover-bg: var(--red);
+    --bs-btn-hover-border-color: var(--red);
+    --bs-btn-active-bg: var(--red);
+    --bs-btn-active-border-color: var(--red);
+    color: var(--night);
+}
+
+/* ---------- Footer ---------- */
+.footer { margin-top: 4rem; background: var(--night); color: var(--sky); }
+.footer h5 { margin-bottom: 1.25rem; font-size: .95rem; font-weight: 500; color: var(--white); }
+.footer p, .footer li, .footer a { font-size: .85rem; color: var(--sky); text-decoration: none; }
+.footer li { margin-bottom: .8rem; }
+.footer a:hover { color: var(--white); }
 
 
 

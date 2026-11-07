@@ -9,11 +9,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
     
     <link rel="icon" href="../img/logo.jpeg">
     
@@ -24,8 +22,8 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Main navigation">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg " aria-label="Main navigation">
             <div class="container-fluid">
                 
                 <a class="navbar-brand" href="../index.html">AmbulApp</a>
@@ -70,8 +68,8 @@
         <p>Valores de referencia. El precio final se confirma según distancia, horario y necesidades específicas.</p>
      
 
-        <div class="table-responsive">
-            <table class= "table table-bordered table-hover">
+        <div class="table-responsive tabla-wrap">
+            <table class= "table table-bordered table-hover tabla-precios">
                 <thead>
                     <tr>
                         <th scope="col">Tipo de recorrido</th>
@@ -105,7 +103,7 @@
             
             <ul class="row g-4 list-unstyled">
                 <li class="col-12 col-md-6 col-lg-4">
-                    <div class="card h-100">
+                    <div class="card plan h-100">
                         <div class="card-body">
                             <h4 class="card-title">Traslado asistencial básico</h4>
                             <p class="card-text">Para pacientes que requieren apoyo durante su desplazamiento</p>
@@ -116,6 +114,7 @@
                             </ul>
                         </div>
                         <div class="card-footer">
+                            
                             <strong>Precio: $50.000</strong>
                             <a class="btn btn-primary float-end" href="reserva.html">Reservar</a>    
                         </div>
@@ -123,7 +122,7 @@
                 </li>
 
                 <li class="col-12 col-md-6 col-lg-4">
-                    <div class="card h-100">
+                    <div class="card plan h-100">
                         <div class="card-body">
                             <h4 class="card-title">Traslado con acompañante</h4>
                             <p class="card-text">Acompañamiento asistencial personalizado durante todo el recorrido</p>
@@ -141,7 +140,7 @@
                 </li>
 
                 <li class="col-12 col-md-6 col-lg-4">
-                    <div class="card h-100">
+                    <div class="card plan h-100">
                         <div class="card-body">
                             <h4 class="card-title">Traslado especializado</h4>
                             <p class="card-text">Para personas con necesidades específicas de soporte y movilidad.</p>
@@ -171,7 +170,7 @@
             
             <ul class="row g-4 list-unstyled">
                 <li class="col-12 col-md-6 col-lg-3">
-                    <div class="card h-100">
+                    <div class="card extra h-100">
                         <div class="card-body">
                             <h4 class="card-title">Espera y regreso</h4>
                             <p class="card-text">El vehículo permanece disponible durante tu cita.</p>
@@ -182,7 +181,7 @@
                 </li>
 
                 <li class="col-12 col-md-6 col-lg-3">
-                    <div class="card h-100">
+                    <div class="card extra h-100">
                         <div class="card-body">
                             <h4 class="card-title">Silla de ruedas</h4>
                             <p class="card-text">Disponibilidad de silla para facilitar tu movilidad.</p>
@@ -193,7 +192,7 @@
                 </li>
 
                 <li class="col-12 col-md-6 col-lg-3">
-                    <div class="card h-100">
+                    <div class="card extra h-100">
                         <div class="card-body">
                             <h4 class="card-title">Acompañante asistencial</h4>
                             <p class="card-text">Apoyo profesional durante todo el proceso.</p>
@@ -204,7 +203,7 @@
                 </li>
 
                 <li class="col-12 col-md-6 col-lg-3">
-                    <div class="card h-100">
+                    <div class="card extra h-100">
                         <div class="card-body">
                             <h4 class="card-title">Soporte de oxígeno</h4>
                             <p class="card-text">Suministro bajo indicación y valoración previa.</p>
@@ -220,10 +219,12 @@
         </div>
 
         <div class="container py-4 text-center">
-            <h6>Listos para acompañarte</h6>
-            <h4>Programa tu próximo traslado</h4>
-            <p>Completa tu solicitud y nuestro equipo confirmará cada detalle contigo</p>
-            <a class="btn btn-primary" href="reserva.html">Reservar</a>
+            <div class="cta">
+                <h6>Listos para acompañarte</h6>
+                <h4>Programa tu próximo traslado</h4>
+                <p>Completa tu solicitud y nuestro equipo confirmará cada detalle contigo</p>
+                <a class="btn btn-primary mt-4" href="reserva.html">Reservar</a>
+            </div>    
         </div>
 
 
@@ -233,49 +234,51 @@
 
     </main>
 
-    <footer class="container py-4">
-        <div class="d-flex flex-column flex-md-row justify-content-between text-center gap-4">
-            <div>
-                <h4>AmbulApp</h4>
-                <p>Movilidad asistencial humana, segura y oportuna en el Valle de Aburrá</p>
-                <p>&copy; 2023 AmbulApp. Todos los derechos reservados.</p>
-            </div>
+    <footer class="footer" >
+        <div class="container py-4">
+            <div class="d-flex flex-column flex-md-row justify-content-between text-center gap-4">
+                <div>
+                    <h4>AmbulApp</h4>
+                    <p>Movilidad asistencial humana, segura y oportuna en el Valle de Aburrá</p>
+                    <p>&copy; 2026 AmbulApp. Todos los derechos reservados.</p>
+                </div>
 
-            <div>
-                <h5>Explora</h5>
-                <ul class="list-unstyled">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="precios.html">Precios y servicios</a></li>
-                    <li><a href="reserva.html">Reservar traslado</a></li>
-                </ul>
-            </div>
+                <div>
+                    <h5>Explora</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="precios.html">Precios y servicios</a></li>
+                        <li><a href="reserva.html">Reservar traslado</a></li>
+                    </ul>
+                </div>
 
-            <div>
-                <h5>Información</h5>
-                <ul class="list-unstyled">
-                    <li><p>Términos y condiciones</p></li>
-                    <li><p>Política de privacidad</p></li>
-                    <li><p>PQRS</p></li>
-                </ul>
-            </div>
+                <div>
+                    <h5>Información</h5>
+                    <ul class="list-unstyled">
+                        <li><p>Términos y condiciones</p></li>
+                        <li><p>Política de privacidad</p></li>
+                        <li><p>PQRS</p></li>
+                    </ul>
+                </div>
 
-            <div>
-                <h5>Contáctanos</h5>
-                <ul class="list-unstyled">
-                    <li>
-                        <address>
-                            Correo electrónico: <a href="mailto:ayuda@ambulapp.co">ayuda@ambulapp.co</a><br>
-                    
-                        </address>
-                    </li>
-                    <li>Teléfono: <a href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer">+57 314 825 3812</a></li>
-                    <li>
-                        <address>
-                            <a href="https://maps.app.goo.gl/joxj2ArDomV6rnWJ6" target="_blank">Calle 16 #55 - 129, Medellín, Colombia</a><br>
-                    
-                        </address>
-                    </li>
-                </ul>
+                <div>
+                    <h5>Contáctanos</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <address>
+                                Correo electrónico: <a href="mailto:ayuda@ambulapp.co">ayuda@ambulapp.co</a><br>
+                        
+                            </address>
+                        </li>
+                        <li>Teléfono: <a href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer">+57 314 825 3812</a></li>
+                        <li>
+                            <address>
+                                <a href="https://maps.app.goo.gl/joxj2ArDomV6rnWJ6" target="_blank">Calle 16 #55 - 129, Medellín, Colombia</a><br>
+                        
+                            </address>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
