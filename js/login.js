@@ -1,23 +1,49 @@
 const form = document.getElementById('loginForm');
+const emailInput = document.getElementById('email');
+const passwordInput = document.getElementById('password');
+const passwordToggle = document.querySelector('.password-toggle');
+const formMessage = document.getElementById('formMessage');
 
-form.addEventListener('submit', function(e) {
-  e.preventDefault();
+function showMessage(message, isSuccess = false) {
+  formMessage.textContent = message;
+  formMessage.classList.toggle('success', isSuccess);
+}
 
-  const email = document.getElementById('email').value.trim();
-  const password = document.getElementById('password').value.trim();
+function clearMessage() {
+  formMessage.textContent = '';
+  formMessage.classList.remove('success');
+}
+
+passwordToggle.addEventListener('click', () => {
+  const isPassword = passwordInput.type === 'password';
+  passwordInput.type = isPassword ? 'text' : 'password';
+  passwordToggle.setAttribute('aria-label', isPassword ? 'Ocultar contraseña' : 'Mostrar contraseña');
+});
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  clearMessage();
+
+  const email = emailInput.value.trim();
+  const password = passwordInput.value.trim();
 
   if (!email || !password) {
-    alert('Por favor completa todos los campos');
+    showMessage('Completa todos los campos para continuar.');
     return;
   }
 
-  if (!email.includes('@')) {
-    alert('Ingresa un correo válido');
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(email)) {
+    showMessage('Ingresa un correo electrónico válido.');
+    emailInput.focus();
     return;
   }
 
-  alert('Login correcto');
+  if (password.length < 6) {
+    showMessage('La contraseña debe tener al menos 6 caracteres.');
+    passwordInput.focus();
+    return;
+  }
 
-  window.location.href = 'reseva.html';
-  
+  showMessage('Credenciales válidas. Frontend listo para conectar con el backend.', true);
 });
