@@ -12,10 +12,10 @@
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Manrope", sans-serif;
     color: var(--azul-noche);
     background-color: #F4F7FA;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 a {
@@ -43,7 +43,7 @@ textarea {
 
 .texto-pequeno {
     color: var(--azul-acero);
-    font-size: 11px;
+    font-size: 12px;
     font-weight: bold;
     letter-spacing: 1px;
     margin: 0 0 8px;
@@ -51,14 +51,14 @@ textarea {
 
 .introduccion h1 {
     margin: 0 0 8px;
-    font-size: 28px;
+    font-size: 32px;
     color: var(--azul-noche);
 }
 
 .descripcion {
     margin: 0;
     color: #647487;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 /*DOS COLUMNAS: FORMULARIO Y PANEL */
@@ -86,14 +86,14 @@ textarea {
 .tarjeta legend {
     padding: 0 5px;
     color: var(--azul-acero);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
 }
 
 .ayuda {
     margin: 0 0 17px;
     color: #758496;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 /*CUADRÍCULA DE LOS CAMPOS */
@@ -116,7 +116,7 @@ textarea {
 
 .campo label {
     color: #42566A;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
 }
 
@@ -152,7 +152,7 @@ textarea {
 .campo input::placeholder,
 .campo textarea::placeholder {
     color: #9AA8B6;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .archivo {
@@ -172,7 +172,7 @@ textarea {
     display: block;
     margin-top: 7px;
     color: #7A8998;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 /*OPCIONES DE SERVICIO Y CHECKBOXES */
@@ -205,7 +205,7 @@ textarea {
 }
 
 .opcion span {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .opcion strong,
@@ -216,7 +216,7 @@ textarea {
 .opcion small {
     margin-top: 4px;
     color: #7A8998;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: normal;
 }
 
@@ -244,7 +244,7 @@ textarea {
     align-items: flex-start;
     gap: 9px;
     color: #526477;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .aceptacion a {
@@ -263,7 +263,7 @@ textarea {
     padding: 10px 16px;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .boton-secundario {
@@ -295,13 +295,13 @@ textarea {
 
 .lateral h2 {
     margin: 0 0 8px;
-    font-size: 14px;
+    font-size: 16px;
     color: var(--azul-acero);
 }
 
 .lateral > p {
     color: #718194;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.5;
 }
 
@@ -312,7 +312,7 @@ textarea {
     border: 1px solid #D5EAE1;
     border-radius: 5px;
     color: #24664F;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .mensaje-ayuda p {
@@ -322,7 +322,7 @@ textarea {
 
 .enlace-ayuda {
     color: var(--azul-acero);
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
 }
 
@@ -368,7 +368,7 @@ textarea {
     }
 
     .introduccion h1 {
-        font-size: 24px;
+        font-size: 26px;
     }
 
     .tarjeta {

@@ -1,0 +1,57 @@
+:root {
+  --ambul-font-family: "Manrope", sans-serif;
+  --ambul-font-size-body: 1rem;
+  --ambul-font-size-small: 0.875rem;
+  --ambul-font-size-caption: 0.75rem;
+}
+
+html,
+body {
+  font-family: var(--ambul-font-family);
+}
+
+body {
+  font-size: var(--ambul-font-size-body);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ambul-font-family);
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2.8vw, 2rem);
+}
+
+h3 {
+  font-size: 1.375rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: var(--ambul-font-size-small);
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: var(--ambul-font-family);
+}
