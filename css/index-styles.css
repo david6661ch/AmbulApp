@@ -6,6 +6,9 @@
     --gris: #E8EDF2;
     --blanco:#FFFFFF;
 
+    /*fuentes de texto*/
+    --fuente-titulos: Arial, sans-serif;
+
     /* espaciados*/
     --espaciado-s: 0.5rem;
     --espaciado-m: 1rem;
@@ -40,7 +43,8 @@ header {
 }
 #menu a{
     text-decoration: none;
-    color: var(--azul-noche)
+    color: var(--azul-noche);
+    font-family: var(--fuente-titulos)
 }
 #btn-inicio{
 
