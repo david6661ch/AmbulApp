@@ -42,7 +42,7 @@
 
         <section class="register-card">
           <form id="registerForm" class="register-form" novalidate>
-            <div class="step active" data-step="1">
+            <div class="step" data-step="1">
               <div class="step-header">
                 <div class="step-number">1</div>
                 <div>
@@ -101,8 +101,10 @@
                 <div class="field">
                   <label for="affiliation">Afiliación</label>
                   <select id="affiliation" name="affiliation" required>
-                    <option value="">Selecciona EPS o particular</option>
-                    <option value="eps">EPS</option>
+                    <option value="" disabled selected hidden>Selecciona EPS o particular...</option>
+                    <option value="eps-salud-total">EPS Salud Total</option>
+                    <option value="eps-nueva-eps">EPS Nueva EPS</option>
+                    <option value="eps-sura">EPS Sura</option>
                     <option value="particular">Particular</option>
                   </select>
                 </div>
@@ -110,7 +112,7 @@
                 <div class="field">
                   <label for="bloodType">Tipo de sangre</label>
                   <select id="bloodType" name="bloodType" required>
-                    <option value="">Selecciona</option>
+                    <option value="" disabled selected hidden>Selecciona una opción...</option>
                     <option value="A+">A+</option>
                     <option value="A-">A-</option>
                     <option value="B+">B+</option>
@@ -156,11 +158,6 @@
               <p class="register-footer">
                 ¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a>
               </p>
-            </div>
-
-            <div class="form-actions">
-              <button type="button" id="prevBtn" class="btn btn-secondary hidden">Anterior</button>
-              <button type="button" id="nextBtn" class="btn btn-primary">Siguiente</button>
             </div>
 
             <p id="formMessage" class="form-message" aria-live="polite"></p>

@@ -44,6 +44,7 @@ form.addEventListener('submit', (event) => {
     passwordInput.focus();
     return;
   }
-
-  showMessage('Credenciales válidas. Frontend listo para conectar con el backend.', true);
+setTimeout(() => {
+    window.location.href = '../index.html';
+  }, 800);
 });
