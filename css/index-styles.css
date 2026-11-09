@@ -44,7 +44,20 @@ header {
 #menu a{
     text-decoration: none;
     color: var(--azul-noche);
-    font-family: var(--fuente-titulos)
+    font-family: var(--fuente-titulos);
+    font-weight: 600;
+    padding: var(--espaciado-s) var(--espaciado-m);
+}
+#menu a:hover{
+    background-color: var(--azul-acero);
+    color: var(--blanco);
+}
+#menu a:focus {
+    outline: 3px solid var(--color-verde-ruta);
+    outline-offset: 2px;
+}
+#activo{
+    border-bottom: var(--azul-noche);
 }
 #btn-inicio{
 
