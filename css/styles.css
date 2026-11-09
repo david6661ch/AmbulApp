@@ -1,17 +1,24 @@
-:root{
-    /*paleta de colores */
-  --night: #0b1f33;
-  --steel: #245b83;
-  --steel-dark: #19496c;
-  --red: #d62839;
-  --mist: #e8edf2;
-  --white: #ffffff;
-  --ink-soft: #566575;
-  --line: #dce4eb;
-  --pale: #f5f8fa;
-  --green: #21835a;
 
-  /*fuentes de texto*/
-  font-family: "Manrope", sans-serif;
+:root {
+    /* Paleta de colores principal */
+    --night: #0b1f33;
+    --steel: #245b83;
+    --steel-dark: #19496c;
+    --red: #d62839;
+    --mist: #e8edf2;
+    --white: #ffffff;
+    --ink-soft: #566575;
+    --line: #dce4eb;
+    --pale: #f5f8fa;
+    --green: #21835a;
+
+    /* Variables de la versión remota */
+    --azul-noche: #0b1f33;
+    --azul-acero: #245b83;
+    --rojo: #d62839;
+    --gris: #e8edf2;
+    --blanco: #ffffff;
+
+    /* Fuentes */
+    font-family: "Manrope", sans-serif;
 }
-

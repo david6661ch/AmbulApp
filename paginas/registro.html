@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ambul-app | Crear cuenta</title>
+    <link rel="stylesheet" href="../css/registro.css" />
+  </head>
+  <body>
+    <div class="register-shell">
+      <aside class="register-visual" aria-label="Imagen promocional Ambul-app">
+        <div class="register-brand">
+          <div class="brand-mark">A</div>
+          <span class="brand-name">Ambul-app</span>
+        </div>
+
+        <div class="register-promo">
+          <span class="eyebrow">EMPIEZA HOY</span>
+          <h1>Crea tu cuenta<br />en Ambul-app</h1>
+          <p>
+            Regístrate para programar y gestionar tus traslados asistenciales de
+            forma sencilla.
+          </p>
+
+          <div class="register-guard">
+            <span class="guard-icon">✓</span>
+            <div>
+              <span class="guard-title">Tus datos están protegidos</span>
+              <p class="guard-text">
+                Tratamos tu información personal y médica con estricta
+                confidencialidad.
+              </p>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <main class="register-panel">
+        <div class="top-bar">
+          <a href="login.html" class="login-link">¿Ya tienes una cuenta? <strong>Inicia sesión</strong></a>
+        </div>
+
+        <section class="register-card">
+          <form id="registerForm" class="register-form" novalidate>
+            <div class="step" data-step="1">
+              <div class="step-header">
+                <div class="step-number">1</div>
+                <div>
+                  <div class="step-title-wrap">
+                    <h2 class="step-title">Información personal</h2>
+                  </div>
+                  <p class="step-subtitle">Datos básicos para identificarte y contactarte.</p>
+                </div>
+              </div>
+
+              <div class="field-grid">
+                <div class="field full">
+                  <label for="fullName">Nombre completo</label>
+                  <input id="fullName" name="fullName" type="text" placeholder="Nombres y apellidos" required />
+                </div>
+
+                <div class="field">
+                  <label for="documentType">Tipo de documento</label>
+                  <select id="documentType" name="documentType" required>
+                    <option value="cedula">Cédula de ciudadanía</option>
+                    <option value="tarjeta">Tarjeta de identidad</option>
+                    <option value="pasaporte">Pasaporte</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="documentNumber">Número de documento</label>
+                  <input id="documentNumber" name="documentNumber" type="text" placeholder="Número de documento" required />
+                </div>
+
+                <div class="field">
+                  <label for="phone">Número de contacto</label>
+                  <input id="phone" name="phone" type="tel" placeholder="+57 300 000 0000" required />
+                </div>
+
+                <div class="field">
+                  <label for="email">Correo electrónico</label>
+                  <input id="email" name="email" type="email" placeholder="correo@ejemplo.com" required />
+                </div>
+              </div>
+            </div>
+
+            <div class="step" data-step="2">
+              <div class="step-header">
+                <div class="step-number">2</div>
+                <div>
+                  <div class="step-title-wrap">
+                    <h2 class="step-title">Información médica</h2>
+                    <span class="step-badge">Información sensible</span>
+                  </div>
+                  <p class="step-subtitle">Nos ayuda a brindarte una atención adecuada.</p>
+                </div>
+              </div>
+
+              <div class="field-grid">
+                <div class="field">
+                  <label for="affiliation">Afiliación</label>
+                  <select id="affiliation" name="affiliation" required>
+                    <option value="" disabled selected hidden>Selecciona EPS o particular...</option>
+                    <option value="eps-salud-total">EPS Salud Total</option>
+                    <option value="eps-nueva-eps">EPS Nueva EPS</option>
+                    <option value="eps-sura">EPS Sura</option>
+                    <option value="particular">Particular</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="bloodType">Tipo de sangre</label>
+                  <select id="bloodType" name="bloodType" required>
+                    <option value="" disabled selected hidden>Selecciona una opción...</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                  </select>
+                </div>
+
+                <div class="field full">
+                  <label for="medicalInfo">Condiciones médicas relevantes</label>
+                  <textarea id="medicalInfo" name="medicalInfo" placeholder="Describe solo la información necesaria para tu traslado..." required></textarea>
+                </div>
+
+                <div class="field full">
+                  <label for="observations">Observaciones</label>
+                  <textarea id="observations" name="observations" placeholder="Necesidades de movilidad, alergias u otra información..." required></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="step" data-step="3">
+              <div class="step-header">
+                <div class="step-number">3</div>
+                <div>
+                  <div class="step-title-wrap">
+                    <h2 class="step-title">Confirmación</h2>
+                  </div>
+                </div>
+              </div>
+
+              <div class="confirm-box">
+                <input id="acceptTerms" name="acceptTerms" type="checkbox" />
+                <label for="acceptTerms">
+                  Acepto los <a href="#">términos y condiciones</a>, la <a href="#">política de privacidad</a> y autorizo el tratamiento de mis datos personales y sensibles.
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary full-submit">Crear cuenta <span aria-hidden="true">→</span></button>
+
+              <p class="register-footer">
+                ¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a>
+              </p>
+            </div>
+
+            <p id="formMessage" class="form-message" aria-live="polite"></p>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <script src="../js/registro.js"></script>
+  </body>
+</html>
