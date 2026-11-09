@@ -30,79 +30,6 @@ textarea {
     font: inherit;
 }
 
-/* ENCABEZADO */
-.encabezado {
-    background-color: var(--Blanco);
-    border-bottom: 1px solid var(--gris);
-}
-
-.barra-superior {
-    max-width: 1200px;
-    min-height: 64px;
-    margin: 0 auto;
-    padding: 0 24px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    color: var(--azul-noche);
-    font-weight: bold;
-    white-space: nowrap;
-}
-
-.logo img {
-    width: 32px;
-    height: 32px;
-    object-fit: contain;
-}
-
-.navegacion {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    height: 64px;
-}
-
-.navegacion a {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    color: #526477;
-    font-size: 12px;
-    border-bottom: 2px solid transparent;
-}
-
-.navegacion a:hover,
-.navegacion .activo {
-    color: var(--azul-acero);
-    border-bottom-color: var(--azul-acero);
-}
-
-.acciones {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    white-space: nowrap;
-    font-size: 12px;
-}
-
-.iniciar-sesion {
-    color: var(--azul-acero);
-}
-
-.boton-nav {
-    padding: 9px 13px;
-    color: var(--Blanco);
-    background-color: var(--azul-acero);
-    border-radius: 4px;
-}
-
 /* CONTENIDO Y TÍTULO */
 .contenedor {
     max-width: 1120px;
@@ -351,8 +278,7 @@ textarea {
     border: 1px solid var(--azul-acero);
 }
 
-.boton-principal:hover,
-.boton-nav:hover {
+.boton-principal:hover {
     background-color: var(--azul-noche);
 }
 
@@ -499,19 +425,6 @@ textarea {
 
 /*ADAPTACIÓN A CELULARES */
 @media (max-width: 850px) {
-    .barra-superior {
-        flex-wrap: wrap;
-        padding-top: 14px;
-        padding-bottom: 14px;
-    }
-
-    .navegacion {
-        order: 3;
-        width: 100%;
-        height: 38px;
-        justify-content: center;
-    }
-
     .contenido {
         grid-template-columns: 1fr;
     }
@@ -529,20 +442,6 @@ textarea {
 @media (max-width: 550px) {
     .contenedor {
         padding: 22px 14px;
-    }
-
-    .barra-superior {
-        padding-left: 14px;
-        padding-right: 14px;
-        gap: 12px;
-    }
-
-    .navegacion {
-        gap: 18px;
-    }
-
-    .acciones {
-        gap: 8px;
     }
 
     .introduccion h1 {

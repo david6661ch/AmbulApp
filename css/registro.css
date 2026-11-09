@@ -40,8 +40,8 @@ button, input, select, textarea, a {
 
 .register-shell {
   display: flex;
-  height: 100vh;
-  min-height: 100vh;
+  height: calc(100vh - var(--ambul-header-height));
+  min-height: calc(100vh - var(--ambul-header-height));
   width: 100%;
   background: var(--white);
   overflow: hidden;
@@ -51,7 +51,7 @@ button, input, select, textarea, a {
   position: relative;
   flex: 1 1 50%;
   min-width: 0;
-  height: 100vh;
+  height: calc(100vh - var(--ambul-header-height));
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -192,7 +192,7 @@ button, input, select, textarea, a {
 .register-panel {
   flex: 1 1 50%;
   min-width: 0;
-  height: 100vh;
+  height: calc(100vh - var(--ambul-header-height));
   overflow-y: auto;
   background: var(--white);
   padding: 1.4rem 2.2rem 2.2rem;
@@ -455,7 +455,7 @@ button, input, select, textarea, a {
   .register-shell {
     display: block;
     height: auto;
-    min-height: 100vh;
+    min-height: calc(100vh - var(--ambul-header-height));
     overflow: visible;
   }
 

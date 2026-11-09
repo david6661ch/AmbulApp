@@ -20,47 +20,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
     
     <link rel="stylesheet" href="../css/styles-precios.css">
+    <link rel="stylesheet" href="../css/header.css">
     
 </head>
 
-<body>
-    <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg " aria-label="Main navigation">
-            <div class="container-fluid">
-                
-                <a class="navbar-brand" href="../index.html">AmbulApp</a>
-               
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse  " id="mainMenu">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Inicio</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="precios.html">Servicios y tarifas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="reserva.html">Reservar</a>
-                        </li>
-
-                        
-                    </ul>
-
-                    <a class="btn btn-primary justify-content-start" href="login.html">Iniciar sesión</a>
-
-
-                </div>
-
-                
-            </div>
-        </nav>
-
-
-    </header>
+<body class="ambul-page">
+    <div id="ambul-header"></div>
 
     <main class="container py-4">
 
@@ -77,7 +42,7 @@
         <h1 class="text-center">Tarifas y servicios</h1>
         <p class="text-center">Tarifas transparentes y justas para todos nuestros clientes.</p>
         
-        <h2>Tarifas por recorrido</h2>
+        <h2 id="tarifas">Tarifas por recorrido</h2>
         <p>Valores de referencia. El precio final se confirma según distancia, horario y necesidades específicas.</p>
      
 
@@ -111,7 +76,7 @@
         </div>
 
         <div class="container py-4">
-            <h2>Tarifas por tipo de servicio</h2>
+            <h2 id="servicios">Tarifas por tipo de servicio</h2>
             <p>Ofrecemos servicios especializados para diferentes necesidades médicas. Los precios pueden variar según la complejidad del servicio y los recursos requeridos.</p>
             
             <ul class="row g-4 list-unstyled">
@@ -320,6 +285,7 @@
 
 
 
+    <script src="../js/header.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
