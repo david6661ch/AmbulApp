@@ -1,193 +1,242 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservas</title>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="css/styles.css">
-
+    <title>Reservar | Ambul-app</title>
+    <link rel="stylesheet" href="../css/reserva.css">
 </head>
 <body>
-    
-    <header>
-        <h1>
-            Ambulapp
-        </h1>
+
+    <!-- Encabezado y navegación -->
+    <header class="encabezado">
+        <div class="barra-superior">
+            <a class="logo" href="#">
+                <span class="logo-icono"></span> <!-- Tengo que adjuntar el logo -->
+                <img src="../img/logo-azul.png" alt="Logo Ambul-app">
+                <span>Ambul-app</span>
+            </a>
+
+            <nav class="navegacion">
+                <a href="../index.html">Inicio</a>
+                <a href="precios.html">Servicios</a>
+                <a class="activo" href="#">Reservar</a>
+            </nav>
+
+            <div class="acciones">
+                <a class="iniciar-sesion" href="login.html">Iniciar sesión</a>
+                <a class="boton-nav" href="registro.html">Crear cuenta</a>
+            </div>
+        </div>
     </header>
 
+    <main class="contenedor">
 
+        <section class="introduccion">
+            <p class="texto-pequeno">PROGRAMA TU SERVICIO</p>
+            <h1>Reserva tu traslado</h1>
+            <p class="descripcion">Completa la información para programar tu servicio de transporte asistencial.</p>
+        </section>
 
-    <main>
+        <div class="contenido">
+            <!-- Formulario -->
+            <form class="formulario" action="#" method="post">
 
-        <p>
-            PROGRAMA TU SERVICIO 
-        </p>
+                <fieldset class="tarjeta">
+                    <legend>▣ Información del usuario</legend>
+                    <p class="ayuda">Datos de la persona que realizará el traslado.</p>
 
-        <h2>
-            Reserva tu traslado
-        </h2>
+                    <div class="rejilla">
+                        <div class="campo campo-completo">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ej: Maria Gonzales" minlength="3" required>
+                        </div>
 
-        <p>
-            Completa la información para programar tu servicio de trasnporte asistencial.
-        </p>
+                        <div class="campo">
+                            <label for="tdocumento">Tipo de documento</label>
+                            <select id="tdocumento" name="tdocumento" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="TI">Tarjeta de identidad</option>
+                                <option value="CC">Cédula de ciudadanía</option>
+                                <option value="CE">Cédula de extranjería</option>
+                                <option value="PP">Pasaporte</option>
+                            </select>
+                        </div>
 
-        <p>
-            Información segura
-        </p>
+                        <div class="campo">
+                            <label for="documento">Número de documento</label>
+                            <input type="text" id="documento" name="documento" minlength="3" maxlength="10" placeholder="Número de documento" required>
+                        </div>
 
-        <p>
-            Tus datos están protegidos.
-        </p>
+                        <div class="campo">
+                            <label for="correo">Correo electrónico</label>
+                            <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                        </div>
 
-        <form action="=#" method="post">
+                        <div class="campo">
+                            <label for="contacto">Número de contacto</label>
+                            <input type="tel" id="contacto" name="contacto" placeholder="300 000 0000" required>
+                        </div>
 
-            <fieldset>
-                <legend>Información del usuario</legend>
-                <p>
-                    Datos de la persona que realizará el traslado.
-                </p>
+                        <div class="campo campo-completo">
+                            <label for="historiaclinica">Historia clínica actualizada</label>
+                            <div class="archivo">
+                                <input type="file" id="historiaclinica" name="historiaclinica" required>
+                                <span class="nota-archivo">PDF, JPG o PNG · Máximo 10 MB</span>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
 
-                <p>
-                    <label for="nombre">Nombre completo</label>
-                    <input type="text" id="nombre" name="nombre" minlength="3" title="Ej: Ana Zuluaga" required>
-                </p>
+                <fieldset class="tarjeta">
+                    <legend>▣ Información del servicio</legend>
+                    <p class="ayuda">Cuéntanos cuándo y dónde necesitas el traslado.</p>
 
-                <p>
-                    <select id="tdocumento" name="tdocumento">
-                        <option value="">Selecciona una opción</option>
-                        <option value="TI">Tarjeta de identidad</option>
-                        <option value="CC">Cédula de ciudadania</option>
-                        <option value="CE">Cédula de extranjería</option>
-                        <option value="PP">Pasaporte</option>
-                    </select>
-                </p>
+                    <div class="rejilla">
+                        <div class="campo">
+                            <label for="fecha">Fecha del servicio</label>
+                            <input type="date" id="fecha" name="fecha" required>
+                        </div>
 
-                <p>
-                    <label for="documento">Número de documento</label>
-                    <input type="text" id="documento" name="documento" minlength="3" maxlength="10" required>
-                </p>
+                        <div class="campo">
+                            <label for="hora">Hora del servicio</label>
+                            <input type="time" id="hora" name="hora" required>
+                        </div>
 
-                <p>
-                    <label for="correo">Correo electronico</label>
-                    <input type="email" id="correo" name="correo" required>
+                        <div class="campo campo-completo">
+                            <label>Tipo de servicio</label>
+                            <div class="opciones">
+                                <label class="opcion" for="particular">
+                                    <input type="radio" id="particular" name="servicio" value="particular">
+                                    <span><strong>Particular</strong><small>Pago directo por el usuario</small></span>
+                                </label>
+                                <label class="opcion" for="convenio">
+                                    <input type="radio" id="convenio" name="servicio" value="convenio" required>
+                                    <span><strong>Convenio</strong><small>Servicio mediante convenio</small></span>
+                                </label>
+                            </div>
+                        </div>
 
-                </p>
+                        <div class="campo campo-completo">
+                            <label for="puntorecogida">Punto de recogida</label>
+                            <input type="text" id="puntorecogida" name="puntorecogida" placeholder="Dirección donde te recogeremos" required>
+                        </div>
 
-                <p>
-                    <label for="contacto">Número de contacto</label>
-                    <input type="number" id="contacto" name="contacto" required>
-                </p>
-                
-                <p>
-                    <label for="historiaclinica">Historia clínica actualizada</label>
-                    <input type="file" id="historiaclinica" name="historiaclinica" required>
-                </p>
+                        <div class="campo campo-completo">
+                            <label for="puntodestino">Punto de destino</label>
+                            <input type="text" id="puntodestino" name="puntodestino" placeholder="Dirección del centro médico o destino" required>
+                        </div>
 
-            </fieldset>
+                        <div class="campo campo-completo">
+                            <label>Servicios adicionales <small class="alineado-derecha">Opcional</small></label>
+                            <div class="opciones opciones-checkbox">
+                                <label class="opcion" for="sillaruedas">
+                                    <input type="checkbox" id="sillaruedas" name="sillaruedas">
+                                    <span>Silla de ruedas</span>
+                                </label>
+                                <label class="opcion" for="acompanamiento">
+                                    <input type="checkbox" id="acompanamiento" name="acompanamiento">
+                                    <span>Acompañamiento asistencial</span>
+                                </label>
+                                <label class="opcion" for="oxigeno">
+                                    <input type="checkbox" id="oxigeno" name="oxigeno">
+                                    <span>Oxígeno</span>
+                                </label>
+                                <label class="opcion" for="esperaregreso">
+                                    <input type="checkbox" id="esperaregreso" name="esperaregreso">
+                                    <span>Espera y regreso</span>
+                                </label>
+                            </div>
+                        </div>
 
-            <fieldset>
-                <legend>
-                    Información del servicio
-                </legend>
-                
-                <p>
-                    Cuéntanos cuándo y dónde necesitas el traslado.
-                </p>
+                        <div class="campo campo-completo">
+                            <label for="comentarios">Observaciones<small class="alineado-derecha">Opcional</small></label>
+                            <textarea id="comentarios" name="comentarios" rows="4" maxlength="300" placeholder="Cuéntanos si tienes alguna condición o necesidad especial"></textarea>
+                        </div>
+                    </div>
+                </fieldset>
 
-                <p>
-                    <label for="fecha">Fecha del servicio</label>
-                    <input type="date" id="fecha" name="fecha" required>
-                </p>
-                
-                <p>
-                    <label for="hora">Hora del servicio</label>
-                    <input type="time" id="hora" name="hora" required>
-                </p>
+                <fieldset class="tarjeta tarjeta-privacidad">
+                    <legend>▣ Confirmación</legend>
+                    <p class="ayuda">Revisa y acepta para enviar tu solicitud</p>
+                    <label class="aceptacion" for="privacidad">
+                        <input type="checkbox" id="privacidad" name="privacidad" required>
+                        <span>Acepto los <a href="#">términos y condiciones </a> y autorizo el tratamiento de mis datos personales según las<a href="#">políticas de privacidad.</a>
 
-                <div class="adicionales">
+                    <div class="botones">
+                        <button class="boton-secundario" type="reset">Cancelar</button>
+                        <button class="boton-principal" type="submit">Confirmar reserva <span>→</span></button>
+                    </div>
+                </fieldset>
 
-                    <p>
-                        Tipo de servicio
-                    </p>
+            </form>
 
-                    <p>
-                        <label for="convenio">Convenio</label>
-                        <input type="radio" id="convenio" name="servicio" required>
+            <!-- Panel lateral -->
+            <aside class="panel-lateral">
+                <section class="tarjeta lateral">
+                    <h2> ¿Necesitas ayuda?</h2>
+                    <p>Nuestro equipo puede ayudarte a completar la reserva.</p>
+                    <div class="mensaje-ayuda">
+                        <strong>✓ Atención personalizada</strong>
+                        <p>Si tienes dudas al completar tu reserva, comunícate con nuestro equipo.</p>
+                    </div>
+                    <a class="enlace-ayuda" href="#">☎ (604) 000 00 00</a>
+                </section>
 
-                        <label for="particular">Particular</label>
-                        <input type="radio" id="particular" name="servicio" required>
-                    </p>
-
-
-                    <p>
-                        <label for="puntorecogida">Punto de recogida</label>
-                        <input type="text" id="puntorecogida" name="puntorecogida" required>
-                    </p>
-
-                    <p>
-                        <label for="puntodestino">Punto de destino</label>
-                        <input type="text" id="puntodestino" name="puntodestino" required>
-                    </p>
-
-                    <p>
-                        Servicios adicionales
-                    </p>
-
-                    <p>
-                        <label for="sillaruedas">Silla de ruedas</label>
-                        <input type="checkbox" id="sillaruedas" name="sillaruedas">
-                    </p>
-
-                    <p>
-                        <label for="acompañamiento">Acompañamiento asistencial</label>
-                        <input type="checkbox" id="acompañamiento" name="acompañamiento">
-                    </p>
-
-                    <p>
-                        <label for="oxigeno">Oxígeno</label>
-                        <input type="checkbox" id="oxigeno" name="oxigeno">
-                    </p>
-
-                    <p>
-                        <label for="ambulancia">Ambulancia</label>
-                        <input type="checkbox" id="ambulancia" name="ambulancia">
-                    </p>
-
-                    <p>
-                        <label for="esperaregreso">Espera y regreso</label>
-                        <input type="checkbox" id="esperaregreso" name="esperaregreso">
-                    </p>
-
-                </div>
-                
-
-                <p>
-                    <label for="comentarios">Deja tú comentario</label>
-                    <p>
-                    </p>
-                    <textarea id="comentarios" name="comentarios" rows="4" cols="50" minlenght="10" maxlength="300" placeholder="Cuéntanos si tienes alguna condicion o necesidad especial"></textarea>
-                </p>
-
-            </fieldset>
-
-            <fieldset>
-                <legend>Política de privacidad</legend>
-                <p>
-                    <input type="checkbox" id="privacidad" name="privacidad" required>
-                    <label for="privacidad">Acepto la política de privacidad</label>
-                </p>
-            </fieldset>
-
-        </form>
-
-
+                <section class="tarjeta lateral">
+                    <div class="icono-circulo"></div>
+                    <h2 class="centrado">Tu salud es nuestra prioridad</h2>
+                    <p class="centrado">Transportes seguros, cómodos y oportunos para ti.</p>
+                    <hr>
+                    <p class="centrado texto-pequeno">¿Tienes alguna pregunta?</p>
+                    <a class="enlace-ayuda centrado" href="#">Consulta nuestras preguntas frecuentes</a>
+                </section>
+            </aside>
+        </div>
     </main>
 
+    <!-- Pie de página -->
+    <footer class="pie">
+        <div class="pie-contenido">
+            <div class="pie-marca">
+                <img src="../img/logo-azul.png" alt="Logo Ambul-app"> <span>Ambul-app</span>
+                <p>Movilidad asistencial<br>con cuidado y confianza.</p>
+                <div class="redes">
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="Instagram">◎</a>
+                    <a href="#" aria-label="WhatsApp">◉</a>
+                </div>
+            </div>
 
+            <div class="pie-columna">
+                <h3>Explora</h3>
+                <a href="../index.html">Inicio</a>
+                <a href="precios">Servicios</a>
+                <a href="#">Tarifas</a>
+            </div>
 
+            <div class="pie-columna">
+                <h3>Información</h3>
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">PQRS</a>
+            </div>
+
+            <div class="pie-columna">
+                <h3>Contáctanos</h3>
+                <p>✉ ayuda@ambulapp.com</p>
+                <p>☎ (604) 000 0000</p>
+                <p>⌖ Medellín, Colombia</p>
+            </div>
+        </div>
+
+        <div class="pie-final">
+            <span>© 2026 Ambul-app. Todos los derechos reservados.</span>
+            <span>Servicio de transporte asistencial programado.</span>
+        </div>
+    </footer>
 
 </body>
 </html>
+
+    
