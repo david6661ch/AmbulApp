@@ -1,4 +1,50 @@
+:root{
+    /*paleta de colores*/
+    --azul-noche: #0B1F33;
+    --azul-acero: #245B83; 
+    --rojo: #D62839;
+    --gris: #E8EDF2;
+    --blanco:#FFFFFF;
+
+    /* espaciados*/
+    --espaciado-s: 0.5rem;
+    --espaciado-m: 1rem;
+    --espaciado-l: 1.5rem;
+    --espaciado-xl: 2rem;
+}
 header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background-color: var(--blanco);
+    flex-wrap: wrap;
+}
+.empresa{
+    display:flex;
+    align-items: center;
+
+}
+#logo {
+    display: block;
+    max-width: 5rem;
+    max-height: auto;
+}
+#menu{
+    display: flex;
+    justify-content: space-between;
+    gap: var(--espaciado-m);
+    padding: var(--espaciado-s);
+}
+#menu a{
+    text-decoration: none;
+    color: var(--azul-noche)
+}
+#btn-inicio{
+
+}
+#btn-registro{
+
 }
