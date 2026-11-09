@@ -481,6 +481,7 @@ a#activo{
     color: var(--blanco);
     background-color: var(--azul-acero);
     margin-top: 2rem ;
+    margin-bottom: 2rem;
     border-radius: 1.5rem;
 }
 .estamos-para-escucharte .btn-contacto,
