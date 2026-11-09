@@ -109,13 +109,20 @@ img {
 .extra .card-text { font-size: .85rem; color: var(--ink-soft); }
 
 /* ---------- Banda CTA ---------- */
-.cta {
+.cta1 {
+    padding: 3rem;
+    background: var(--night);
+    border-radius: 1.5rem;
+    color: var(--white);
+}
+
+.cta2 {
     padding: 3rem;
     background: var(--steel);
     border-radius: 1.5rem;
     color: var(--white);
 }
-.cta h6 {
+.cta1 h6, .cta2 h6 {
     margin-bottom: 1rem;
     font-size: .72rem;
     font-weight: 800;
@@ -125,15 +132,15 @@ img {
 }
 
 
-.cta h4 {
+.cta1 h4, .cta2 h4 {
     font-size: clamp(1.8rem, 3vw, 2.4rem);
     font-weight: 400;
     letter-spacing: -.03em;
     color: var(--white);
 }
 
-.cta p { margin: 0; color: var(--white); }
-.cta .btn {
+.cta1 p, .cta2 p { margin: 0; color: var(--white); }
+.cta1 .btn, .cta2 .btn {
     --bs-btn-bg: var(--white);
     --bs-btn-border-color: var(--white);
     --bs-btn-hover-bg: var(--red);

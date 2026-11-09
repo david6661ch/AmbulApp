@@ -17,6 +17,8 @@
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    
     <link rel="stylesheet" href="../css/styles-precios.css">
     
 </head>
@@ -39,7 +41,7 @@
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="precios.html">Precios y servicios</a>
+                            <a class="nav-link active" aria-current="page" href="precios.html">Servicios y tarifas</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="reserva.html">Reservar</a>
@@ -61,7 +63,18 @@
     </header>
 
     <main class="container py-4">
-        <h1 class="text-center">Precios y Servicios</h1>
+
+        <div class="container py-4 ">
+            <div class="cta1">
+                <h6>opciones para cada necesidad</h6>
+                <h4>Nuestros servicios y tarifas</h4>
+                <p>Conoce las opciones de transporte asistencial y consulta sus tarifas de referencia</p>
+                <a class="btn btn-primary mt-4" href="reserva.html">Solicitar servicio -></a>
+            </div>    
+        </div>
+
+
+        <h1 class="text-center">Tarifas y servicios</h1>
         <p class="text-center">Tarifas transparentes y justas para todos nuestros clientes.</p>
         
         <h2>Tarifas por recorrido</h2>
@@ -104,6 +117,10 @@
             <ul class="row g-4 list-unstyled">
                 <li class="col-12 col-md-6 col-lg-4">
                     <div class="card plan h-100">
+                        <div class="ratio ratio-4x3">
+                            <img src="../img/traslado_asistencial_basico.png" class="card-img-top object-fit-contain" alt="Traslado asistencial básico">
+                        </div>
+
                         <div class="card-body">
                             <h4 class="card-title">Traslado asistencial básico</h4>
                             <p class="card-text">Para pacientes que requieren apoyo durante su desplazamiento</p>
@@ -116,13 +133,16 @@
                         <div class="card-footer">
                             
                             <strong>Precio: $50.000</strong>
-                            <a class="btn btn-primary float-end" href="reserva.html">Reservar</a>    
+                            <a class="btn btn-primary float-end" href="reserva.html">Elegir servicio</a>    
                         </div>
                     </div> 
                 </li>
 
                 <li class="col-12 col-md-6 col-lg-4">
                     <div class="card plan h-100">
+                        <div class="ratio ratio-4x3">
+                            <img src="../img/traslado_con_acompañante.png" class="card-img-top object-fit-contain" alt="Traslado con acompañante">
+                        </div>
                         <div class="card-body">
                             <h4 class="card-title">Traslado con acompañante</h4>
                             <p class="card-text">Acompañamiento asistencial personalizado durante todo el recorrido</p>
@@ -134,13 +154,16 @@
                         </div>
                         <div class="card-footer">
                             <strong>Precio: $100.000</strong>
-                            <a class="btn btn-primary float-end" href="reserva.html">Reservar</a>    
+                            <a class="btn btn-primary float-end" href="reserva.html">Elegir servicio</a>    
                         </div>
                     </div>
                 </li>
 
                 <li class="col-12 col-md-6 col-lg-4">
                     <div class="card plan h-100">
+                        <div class="ratio ratio-4x3">
+                            <img src="../img/traslado_especializado.png" class="card-img-top object-fit-contain" alt="Traslado especializado">
+                        </div>
                         <div class="card-body">
                             <h4 class="card-title">Traslado especializado</h4>
                             <p class="card-text">Para personas con necesidades específicas de soporte y movilidad.</p>
@@ -152,7 +175,7 @@
                         </div>
                         <div class="card-footer">
                             <strong>Precio: $200.000</strong>
-                            <a class="btn btn-primary float-end" href="reserva.html">Reservar</a>    
+                            <a class="btn btn-primary float-end" href="reserva.html">Elegir servicio</a>    
                         </div>
                     </div>
                 </li>
@@ -171,6 +194,9 @@
             <ul class="row g-4 list-unstyled">
                 <li class="col-12 col-md-6 col-lg-3">
                     <div class="card extra h-100">
+                        <div class="ratio ratio-4x3">
+                            <img src="../img/espera_regreso.png" class="card-img-top object-fit-contain" alt="Espera y regreso">
+                        </div>
                         <div class="card-body">
                             <h4 class="card-title">Espera y regreso</h4>
                             <p class="card-text">El vehículo permanece disponible durante tu cita.</p>
@@ -182,6 +208,9 @@
 
                 <li class="col-12 col-md-6 col-lg-3">
                     <div class="card extra h-100">
+                         <div class="ratio ratio-4x3">
+                            <img src="../img/silla_de_ruedas.png" class="card-img-top object-fit-contain" alt="Silla de ruedas">
+                        </div>
                         <div class="card-body">
                             <h4 class="card-title">Silla de ruedas</h4>
                             <p class="card-text">Disponibilidad de silla para facilitar tu movilidad.</p>
@@ -193,6 +222,9 @@
 
                 <li class="col-12 col-md-6 col-lg-3">
                     <div class="card extra h-100">
+                         <div class="ratio ratio-4x3">
+                            <img src="../img/acompañante_asistencial.png" class="card-img-top object-fit-contain" alt="Acompañante asistencial">
+                        </div>
                         <div class="card-body">
                             <h4 class="card-title">Acompañante asistencial</h4>
                             <p class="card-text">Apoyo profesional durante todo el proceso.</p>
@@ -204,6 +236,9 @@
 
                 <li class="col-12 col-md-6 col-lg-3">
                     <div class="card extra h-100">
+                         <div class="ratio ratio-4x3">
+                            <img src="../img/oxigeno.png" class="card-img-top object-fit-contain" alt="Soporte de oxígeno">
+                        </div>
                         <div class="card-body">
                             <h4 class="card-title">Soporte de oxígeno</h4>
                             <p class="card-text">Suministro bajo indicación y valoración previa.</p>
@@ -219,11 +254,11 @@
         </div>
 
         <div class="container py-4 text-center">
-            <div class="cta">
+            <div class="cta2">
                 <h6>Listos para acompañarte</h6>
                 <h4>Programa tu próximo traslado</h4>
                 <p>Completa tu solicitud y nuestro equipo confirmará cada detalle contigo</p>
-                <a class="btn btn-primary mt-4" href="reserva.html">Reservar</a>
+                <a class="btn btn-primary mt-4" href="reserva.html">Solicitar servicio particular -></a>
             </div>    
         </div>
 
@@ -247,7 +282,7 @@
                     <h5>Explora</h5>
                     <ul class="list-unstyled">
                         <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="precios.html">Precios y servicios</a></li>
+                        <li><a href="precios.html">Servicios y tarifas</a></li>
                         <li><a href="reserva.html">Reservar traslado</a></li>
                     </ul>
                 </div>
@@ -266,14 +301,14 @@
                     <ul class="list-unstyled">
                         <li>
                             <address>
-                                Correo electrónico: <a href="mailto:ayuda@ambulapp.co">ayuda@ambulapp.co</a><br>
+                                <i class="bi bi-envelope me-2" aria-hidden="true"></i>Correo electrónico: <a href="mailto:ayuda@ambulapp.co">ayuda@ambulapp.co</a><br>
                         
                             </address>
                         </li>
-                        <li>Teléfono: <a href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer">+57 314 825 3812</a></li>
+                        <li><i class="bi bi-whatsapp me-2" aria-hidden="true"></i>Teléfono: <a href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer">+57 314 825 3812</a></li>
                         <li>
                             <address>
-                                <a href="https://maps.app.goo.gl/joxj2ArDomV6rnWJ6" target="_blank">Calle 16 #55 - 129, Medellín, Colombia</a><br>
+                                <i class="bi bi-geo-alt me-2 text-primary" aria-hidden="true"></i><a href="https://maps.app.goo.gl/joxj2ArDomV6rnWJ6" target="_blank">Calle 16 #55 - 129, Medellín, Colombia</a><br>
                         
                             </address>
                         </li>
