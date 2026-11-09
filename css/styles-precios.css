@@ -149,13 +149,3 @@ img {
     --bs-btn-active-border-color: var(--red);
     color: var(--night);
 }
-
-/* ---------- Footer ---------- */
-.footer { margin-top: 4rem; background: var(--night); color: var(--sky); }
-.footer h5 { margin-bottom: 1.25rem; font-size: .95rem; font-weight: 500; color: var(--white); }
-.footer p, .footer li, .footer a { font-size: .85rem; color: var(--sky); text-decoration: none; }
-.footer li { margin-bottom: .8rem; }
-.footer a:hover { color: var(--white); }
-
-
-
