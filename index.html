@@ -3,27 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/index-styles.css">
     <title>Ambul-App</title>
 </head>
 <body>
-    <header>
-        <div class="empresa">
-        <img id="logo" src="img/logo.jpg" alt="Logo de Ambul-App">
-        <h2>Ambul<span>-app</span></h2>
-        </div>
-        <nav class="menu">
-            <a id="activo" href="index.html">Inicio</a>
-            <a href="paginas/precios.html">Servicios</a>
-            <a href="paginas/precios.html">Tarifas </a>
-            <a href="paginas/reserva.html">Reservar</a>
-        </nav>
-        <nav class="sesion">
-            <a href="paginas/inicio.html" id="btn-inicio">Inicia sesión</a>
-            <a href="paginas/registro.html" id="btn-registro">Regístrate</a>
-        </nav>
-    </header>
+    
     <main>
         <article class="transporte">
             <section class="transporte-texto">
@@ -146,48 +130,91 @@
                     <p>Cada traslado es una oportunidad para cuidar.</p>
                 </div>
             </section>
-            <section>
-            <p>PENSADO PARA TI</p>
+            <section id="descripcion">
+            <p id="etiqueta">PENSADO PARA TI</p>
             <h2>Más que un traslado, una experiencia de cuidado.</h2>
             <p>Diseñamos un servicio accesible para acompañarte con
                 confianza antes, durante y después de cada recorrido.</p>
-            </section>
-            <section>
+            <article class="tarjetas">
                 <div id="tarjeta">
-                    <h3>Movilidad adaptada</h3>
-                    <p>Vehículos equipados según tus necesidades de movilidad.</p>
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M5 18H4a1 1 0 0 1-1-1V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a1 1 0 0 1-1 1h-1"/>
+                        <path d="M9 18h6"/>
+                        <path d="M3 14h18"/>
+                        <path d="M12 7v4"/>
+                        <path d="M10 9h4"/>
+                        <circle cx="7" cy="18" r="2"/>
+                        <circle cx="17" cy="18" r="2"/>
+                    </svg>
+                    <div>
+                        <h3>Movilidad adaptada</h3>
+                        <p>Vehículos equipados según tus necesidades de movilidad.</p>
+                    </div>
                 </div>
                 <div id="tarjeta">
-                    <h3>Reserva programada</h3>
-                    <p>Elige con anticipación la fecha y hora de tu traslado.</p>
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M8 2v4"/>
+                        <path d="M16 2v4"/>
+                        <rect x="3" y="4" width="18" height="18" rx="2"/>
+                        <path d="M3 10h18"/>
+                    </svg>
+                    <div>
+                        <h3>Reserva programada</h3>
+                        <p>Elige con anticipación la fecha y hora de tu traslado.</p>
+                    </div>
                 </div>
                 <div id="tarjeta">
-                    <h3>Cobertura local</h3>
-                    <p>Traslados a centros médicos en el Valle de Aburrá </p>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    <div>
+                        <h3>Cobertura local</h3>
+                        <p>Traslados a centros médicos en el Valle de Aburrá </p>
+                    </div>    
                 </div>
                 <div id="tarjeta">
-                    <h3>Atención personalizada</h3>
-                    <p>Acompañamiento humano durante todo el recorrido.</p>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M16 3.128a4 4 0 0 1 0 7.744"/>
+                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                    </svg>
+                    <div>
+                        <h3>Atención personalizada</h3>
+                        <p>Acompañamiento humano durante todo el recorrido.</p>
+                    </div>
                 </div>
+            </article>
             </section>
             
         </article>
-        <article class="card">
-            <p class="text-title h6">INFORMACIÓN IMPORTANTE</p>
-            <h3 class="card-title h3">Ambul-app no es un servicio de emergencias</h3>
-            <p class="card-text">Si tú o alguien cercano presenta una emergencia médica, 
-                comunícate de inmediato con la línea 123. Nuestro servicio es
+        <article class="importante">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 16v-4"/>
+                <path d="M12 8h.01"/>
+            </svg>
+            <div>
+            <p id="etiqueta">INFORMACIÓN IMPORTANTE</p>
+            <p id="titulo">Ambul-app no es un servicio de emergencias</p>
+            <p>Si tú o alguien cercano presenta una emergencia médica, 
+                comunícate de inmediato con la línea <strong>123</strong>. Nuestro servicio es
                 exclusivamente para traslados asistenciales programados.</p>
+            </div>
         </article>
-        <article>
-            <p>
+        <article class="estamos-para-escucharte">
+            <section>
                 <p>Estamos para escucharte</p>
                 <h2>¿Cómo podemos ayudarte </h2>
                 <p>Cuéntanos tus peticiones, quejas, reclamos o sugerencias. Nuestro equipo de atención te responderá con claridad y prontitud.</p>
             </section>
-            <section><a href="">Contactar Soporte</a></section>
+            <section class="btn-contacto"><a  href="">Contactar Soporte</a>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6"/>
+                </svg>
+            </section>
         </article>
     </main>
-<!--    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>-->
 </body>
 </html>
